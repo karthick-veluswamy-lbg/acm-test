@@ -9,7 +9,7 @@ spec:
     repo: "https://github.com/karthick-veluswamy-lbg/acm-ns.git"
     revision: "HEAD"
     branch: "main"
-    dir: "."
+    dir: "envs/dev"
     # auth: token
     # secretRef:
     #   name: git-creds
