@@ -9,4 +9,4 @@ patches:
   patch: |-
     - op: replace
       path: /metadata/annotations/configsync.gke.io~1cluster-name-selector
-      value: istio-config-consolidation
+      value: istio-acm-cluster-1
