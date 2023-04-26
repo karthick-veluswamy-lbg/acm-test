@@ -10,3 +10,4 @@ spec:
     revision: "HEAD"
     branch: "main"
     dir: "envs/dev"
+    auth: none
