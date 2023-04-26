@@ -1,2 +1,11 @@
 resources:
 - ../../../../rootSyncs/git/ns/
+
+patches:
+- target:
+    kind: RootSync
+    name: namespace-vending
+  patch: |-
+    - op: replace
+      path: /metadata/annotations/configsync.gke.io~1cluster-name-selector
+      value: istio-acm-cluster-1
