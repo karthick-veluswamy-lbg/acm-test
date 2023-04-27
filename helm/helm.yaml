@@ -11,6 +11,7 @@ spec:
     chart: istio
     version: 1.17.1
     releaseName: istio
+    includeCRDs: true
     namespace: istio-system
     auth: gcpserviceaccount
     gcpServiceAccountEmail: playpen-0mybl5-sa@playpen-0mybl5.iam.gserviceaccount.com
