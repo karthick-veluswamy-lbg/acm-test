@@ -23,7 +23,7 @@ patches:
   patch: |-
     - op: replace
       path: /metadata/name
-      value: istio-acm-cluster-1-add-ons
+      value: istio-acm-cluster-2-add-ons
     - op: replace
       path: /spec/git/dir
       value: caas/dev
