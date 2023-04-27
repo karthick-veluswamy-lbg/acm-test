@@ -7,7 +7,7 @@ spec:
   sourceFormat: unstructured
   sourceType: helm
   helm:
-    repo: oci://europe-west2-docker.pkg.dev/playpen-0mybl5/istio-helm-pp/hello-chart
+    repo: oci://europe-west2-docker.pkg.dev/playpen-0mybl5/istio-helm-pp/
     chart: hello-chart
     version: 0.1.0
     releaseName: hello-chart
