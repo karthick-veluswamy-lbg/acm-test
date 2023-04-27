@@ -1,5 +1,6 @@
 resources:
 - ../../../../rootSyncs/git/ns/
+- ../../../../rootSyncs/git/add-ons/
 
 patches:
 - target:
@@ -12,6 +13,20 @@ patches:
     - op: replace
       path: /spec/git/dir
       value: envs/dev
+    - op: replace
+      path: /metadata/annotations/configsync.gke.io~1cluster-name-selector
+      value: istio-acm-cluster-2
+
+- target:
+    kind: RootSync
+    name: add-ons
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: istio-acm-cluster-1-add-ons
+    - op: replace
+      path: /spec/git/dir
+      value: caas/dev
     - op: replace
       path: /metadata/annotations/configsync.gke.io~1cluster-name-selector
       value: istio-acm-cluster-2

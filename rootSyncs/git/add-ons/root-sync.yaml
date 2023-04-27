@@ -1,0 +1,13 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: add-ons
+  namespace: config-management-system
+spec:
+  sourceFormat: unstructured
+  git:
+    repo: "https://github.com/karthick-veluswamy-lbg/acm-add-ons.git"
+    revision: "HEAD"
+    branch: "main"
+    dir: ""
+    auth: none
