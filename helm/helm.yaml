@@ -1,31 +1,31 @@
 apiVersion: configsync.gke.io/v1beta1
 kind: RootSync
 metadata:
-  name: helm-chart-test
+  name: istio-1-17-1
   namespace: config-management-system
 spec:
   sourceFormat: unstructured
   sourceType: helm
   helm:
-    repo: oci://europe-west2-docker.pkg.dev/playpen-0mybl5/istio-helm-pp
-    chart: hello-chart
-    version: 0.1.0
-    releaseName: hello-chart
-    namespace: default
+    repo: oci://europe-west2-docker.pkg.dev/playpen-0mybl5/helm-charts
+    chart: istio
+    version: 1.17.1
+    releaseName: istio
+    namespace: istio-system
     auth: gcpserviceaccount
     gcpServiceAccountEmail: playpen-0mybl5-sa@playpen-0mybl5.iam.gserviceaccount.com
     # From Anthos Config Management version 1.13.1 and later, you can use
     # the optional field spec.helm.values to override default values.
     # You can use the same format as the default values file to override
     # default values.
-    values:
-      image:
-        pullPolicy: Always
-      primary:
-        resources:
-          limits:
-            cpu: 250m
-            memory: 256Mi
-          requests:
-            cpu: 250m
-            memory: 256Mi
+    # values:
+    #   image:
+    #     pullPolicy: Always
+    #   primary:
+    #     resources:
+    #       limits:
+    #         cpu: 250m
+    #         memory: 256Mi
+    #       requests:
+    #         cpu: 250m
+    #         memory: 256Mi
