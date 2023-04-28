@@ -1,6 +1,6 @@
 resources:
-- ../../../../rootSyncs/git/ns/
-- ../../../../rootSyncs/git/add-ons/
+- ../../../../templates/rootSyncs/git/ns/
+- ../../../../templates/rootSyncs/git/add-ons/
 
 patches:
 - target:

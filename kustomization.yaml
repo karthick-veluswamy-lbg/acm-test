@@ -1,6 +1,5 @@
 resources:
 - envs/dev
-- helm/helm.yaml
 # - envs/test
 
 
