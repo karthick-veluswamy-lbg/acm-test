@@ -12,7 +12,7 @@ patches:
       value: istio-acm-cluster-1-ns
     - op: replace
       path: /spec/git/dir
-      value: envs/dev
+      value: envs/dev/caas/cluster-1
     - op: replace
       path: /metadata/annotations/configsync.gke.io~1cluster-name-selector
       value: istio-acm-cluster-1
