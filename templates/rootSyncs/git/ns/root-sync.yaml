@@ -1,7 +1,7 @@
 apiVersion: configsync.gke.io/v1beta1
 kind: RootSync
 metadata:
-  name: namespace-vending
+  name: ns-vending
   namespace: config-management-system
 spec:
   sourceFormat: unstructured

@@ -2,12 +2,12 @@ resources:
 - ../../../../../templates/rootSyncs/git/ns/
 - ../../../../../templates/rootSyncs/git/add-ons/
 
-nameSuffix: -cluster-1
+nameSuffix: -pv-idv-caas-01-cluster-1
 
 patches:
 - target:
     kind: RootSync
-    name: namespace-vending
+    name: ns-vending
   patch: |-
     - op: replace
       path: /spec/git/dir
