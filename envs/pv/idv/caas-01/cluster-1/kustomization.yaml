@@ -10,8 +10,8 @@ patches:
     name: ns-vending
   patch: |-
     - op: replace
-      path: /spec/git/dir
-      value: envs/dev/
+      path: /spec/git/branch
+      value: main
 
 - target:
     kind: RootSync

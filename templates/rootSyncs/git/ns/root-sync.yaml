@@ -6,8 +6,10 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    repo: "https://github.com/karthick-veluswamy-lbg/acm-ns.git"
+    repo: "https://github.com/lbg-cloud-platform/cls_ple_gcp_gke_stratos_shared_root_acm"
     revision: "HEAD"
     branch: "main"
     dir: ""
-    auth: none
+    auth: token
+    secretRef:
+      name: git-creds
