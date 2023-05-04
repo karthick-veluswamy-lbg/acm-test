@@ -19,7 +19,4 @@ patches:
   patch: |-
     - op: replace
       path: /spec/git/dir
-      value: caas/dev/cluster-1
-    - op: replace
-      path: /spec/git/branch
-      value: main
+      value: envs/pv/idv/caas-01/cluster-1/
