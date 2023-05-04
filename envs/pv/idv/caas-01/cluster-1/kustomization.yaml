@@ -2,7 +2,7 @@ resources:
 - ../../../../../templates/rootSyncs/git/ns/
 - ../../../../../templates/rootSyncs/git/add-ons/
 
-nameSuffix: -pv-idv-caas-01-cluster-1
+# nameSuffix: -pv-idv-caas-01-cluster-1
 
 patches:
 - target:
