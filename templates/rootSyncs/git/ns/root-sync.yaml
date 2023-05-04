@@ -6,7 +6,7 @@ metadata:
 spec:
   sourceFormat: unstructured
   git:
-    repo: "https://github.com/lbg-cloud-platform/cls_ple_gcp_gke_stratos_shared_root_acm"
+    repo: "https://github.com/lbg-cloud-platform/cls_ple_gcp_gke_stratos_shared_namespaces_acm.git"
     revision: "HEAD"
     branch: "main"
     dir: ""
