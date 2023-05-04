@@ -1,6 +1,6 @@
 resources:
-- ../../../../templates/rootSyncs/git/ns/
-- ../../../../templates/rootSyncs/git/add-ons/
+- ../../../../../templates/rootSyncs/git/ns/
+- ../../../../../templates/rootSyncs/git/add-ons/
 
 nameSuffix: -cluster-1
 
