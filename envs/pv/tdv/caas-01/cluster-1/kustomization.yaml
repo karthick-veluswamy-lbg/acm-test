@@ -1,0 +1,29 @@
+resources:
+- ../../../../templates/rootSyncs/git/ns/
+- ../../../../templates/rootSyncs/git/add-ons/
+
+patches:
+- target:
+    kind: RootSync
+    name: namespace-vending
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: istio-acm-cluster-1-ns
+    - op: replace
+      path: /spec/git/dir
+      value: envs/dev/
+
+- target:
+    kind: RootSync
+    name: add-ons
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: istio-acm-cluster-1-add-ons
+    - op: replace
+      path: /spec/git/dir
+      value: caas/dev/cluster-1
+    - op: replace
+      path: /spec/git/branch
+      value: main

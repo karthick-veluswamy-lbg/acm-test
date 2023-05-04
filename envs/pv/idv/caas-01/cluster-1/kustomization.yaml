@@ -1,0 +1,25 @@
+resources:
+- ../../../../templates/rootSyncs/git/ns/
+- ../../../../templates/rootSyncs/git/add-ons/
+
+nameSuffix: -cluster-1
+
+patches:
+- target:
+    kind: RootSync
+    name: namespace-vending
+  patch: |-
+    - op: replace
+      path: /spec/git/dir
+      value: envs/dev/
+
+- target:
+    kind: RootSync
+    name: add-ons
+  patch: |-
+    - op: replace
+      path: /spec/git/dir
+      value: caas/dev/cluster-1
+    - op: replace
+      path: /spec/git/branch
+      value: main

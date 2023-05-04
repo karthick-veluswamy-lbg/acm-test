@@ -9,13 +9,13 @@ patches:
   patch: |-
     - op: replace
       path: /metadata/name
-      value: istio-acm-cluster-1-ns
+      value: istio-acm-cluster-2-ns
     - op: replace
       path: /spec/git/dir
-      value: envs/dev/caas/cluster-1
+      value: envs/dev
     - op: replace
       path: /metadata/annotations/configsync.gke.io~1cluster-name-selector
-      value: istio-acm-cluster-1
+      value: istio-acm-cluster-2
 
 - target:
     kind: RootSync
@@ -23,10 +23,10 @@ patches:
   patch: |-
     - op: replace
       path: /metadata/name
-      value: istio-acm-cluster-1-add-ons
+      value: istio-acm-cluster-2-add-ons
     - op: replace
       path: /spec/git/dir
       value: caas/dev
     - op: replace
       path: /metadata/annotations/configsync.gke.io~1cluster-name-selector
-      value: istio-acm-cluster-1
+      value: istio-acm-cluster-2

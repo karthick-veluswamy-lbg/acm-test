@@ -1,0 +1,5 @@
+resources:
+- caas01/cluster-1
+- caas01/cluster-2
+- caas02/cluster-1
+- caas02/cluster-2
